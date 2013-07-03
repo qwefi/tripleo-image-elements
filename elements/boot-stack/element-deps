@@ -9,3 +9,4 @@ os-refresh-config
 neutron-openvswitch-agent
 neutron-server
 rabbitmq-server
+source-repositories

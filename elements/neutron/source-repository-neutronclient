@@ -1,0 +1,1 @@
+python-neutronclient git /opt/stack/python-neutronclient_trunk https://github.com/openstack/python-neutronclient.git

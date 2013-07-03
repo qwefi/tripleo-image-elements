@@ -3,4 +3,4 @@ set -eux
 
 # Due to trunk neutron relying on trunk neutronclient, we need
 # trunk neutronclient - https://bugs.launchpad.net/neutron/+bug/1182732
-/opt/stack/venvs/neutron/bin/pip install -U git+https://github.com/openstack/python-neutronclient
+/opt/stack/venvs/neutron/bin/pip install -U /opt/stack/python-neutronclient_trunk

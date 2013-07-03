@@ -1,0 +1,2 @@
+# image toolchain
+diskimage-builder git /opt/stack/diskimage-builder https://github.com/stackforge/diskimage-builder.git
