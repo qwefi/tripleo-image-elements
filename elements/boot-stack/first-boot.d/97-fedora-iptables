@@ -22,7 +22,6 @@ if [[ "Fedora" = $DISTRO ]]; then
         iptables -I INPUT -p tcp --dport 8004 -j ACCEPT
 
         # DHCP, TFTP
-        iptables -I INPUT -m udp -p udp --dport 67 -j ACCEPT
         iptables -I INPUT -m udp -p udp --dport 69 -j ACCEPT
 
         # ISCSI
