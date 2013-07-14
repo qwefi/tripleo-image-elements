@@ -1,0 +1,6 @@
+#!/bin/bash
+set -ex
+
+# toci needs to log in as heat-admin and sudo stuff
+sed -i -e 's/Defaults.*requiretty/Defaults    !requiretty/g' /etc/sudoers
+
