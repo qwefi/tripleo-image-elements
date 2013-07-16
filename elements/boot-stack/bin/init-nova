@@ -25,7 +25,7 @@ deploy_kernel_id=$(glance image-create --name $deploy_kernel --public --disk-for
 deploy_ramdisk_id=$(glance image-create --name $deploy_ramdisk --public --disk-format ari < "$boot_stack/$deploy_ramdisk" \
                      | grep ' id ' | awk '{print $4}')
 
-nova flavor-create baremetal 256 512 10 1
+nova flavor-create baremetal 256 512 30 1
 nova flavor-key baremetal set "cpu_arch"="$arch" \
                               "baremetal:deploy_kernel_id"="$deploy_kernel_id" \
                               "baremetal:deploy_ramdisk_id"="$deploy_ramdisk_id"
